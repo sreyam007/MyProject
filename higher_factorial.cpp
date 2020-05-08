@@ -1,12 +1,15 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 int main()
 {
 	int arr[100000],mul[100000], adder, rem, rem1;
-    int arr_len=0,i,j,k,n=2,a,fact_value;
-    scanf("%d",&fact_value);
+    int arr_len=0,i,k,n=2,a,fact_value;
+    
+    cin>>fact_value;        //input of the factorial number
+    
     if(fact_value<=1)
-        printf("1");
+        cout<<1;
     else
     {
     	arr[0]=1;
@@ -45,7 +48,7 @@ int main()
         	arr_len=k;
         }
     	for(i=k;i>=0;i--)
-        	printf("%d",mul[i]);
+        	cout<<mul[i];
     }
     return 0;
 }
